@@ -1,0 +1,5 @@
+do web.config mozna dodac <add key="TrybZamknieciaZam" value="0"/> - zmienia tryb zamkniecia dokumentu zamowienia - 0 bufor 2 potwierdzony - bez wzgledu na to co od macka dostajemy
+<add key="gidGrupaKnt" value="0">
+<add key="gidFirma" value="0">
+<add key="logUsageStats" value="0"/> 0 nie loguje statsow, 1 loguje statsy, default 1, inne wartosci - wylaczaja logowanie
+<add key="logParams" value="1"/>  0 nie loguje parametrów, 1 loguje parametry w trybie debug/all,2 loguje parametry zawsze, default 0, inne wartosci - wylaczaja logowanie

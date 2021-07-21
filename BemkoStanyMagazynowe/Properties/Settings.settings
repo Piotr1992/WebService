@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BemkoStanyMagazynowe.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="stanyMagazynoweQuery" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select twr_kod Symbol, convert(varchar(10),getdate(), 121) Data,
+
+case when CDN.bmp_DokSumaStanowTowaru(Twr_GIDTyp,Twr_GIDFirma,Twr_GIDNumer,Twr_Typ,1,1,1,Twr_GIDFirma,12,0,0,0, DATEDIFF(d,'1800-12-28T00:00:00',getdate()), 0,3, 0,0,0,0,0,0,0,0) &lt; 0 then 0
+
+else CDN.bmp_DokSumaStanowTowaru(Twr_GIDTyp,Twr_GIDFirma,Twr_GIDNumer,Twr_Typ,1,1,1,Twr_GIDFirma,12,0,0,0, DATEDIFF(d,'1800-12-28T00:00:00',getdate()), 0,3, 0,0,0,0,0,0,0,0) end Stan
+
+,Twr_JM Jm
+
+from cdn.TwrKarty
+
+where Twr_Typ in (1,2)
+
+and Twr_Archiwalny=0</Value>
+    </Setting>
+    <Setting Name="loginContext" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Machine</Value>
+    </Setting>
+    <Setting Name="wersja" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1.0.0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

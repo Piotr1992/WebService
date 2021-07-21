@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OptimaOperations.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Login" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">serwis</Value>
+    </Setting>
+    <Setting Name="Haslo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">krowek21</Value>
+    </Setting>
+    <Setting Name="Firma" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CHMIELEWSKI_D_WIGI</Value>
+    </Setting>
+    <Setting Name="KonString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NET:CDN_KNF_Konfiguracja,chmielewski-erp,NT=0</Value>
+    </Setting>
+    <Setting Name="OptimaLoc" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files (x86)\Comarch ERP Optima</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

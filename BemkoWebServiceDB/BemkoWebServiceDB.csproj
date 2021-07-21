@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36E8939A-92BF-4195-91E1-78E157C8539E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BemkoWebServiceDB</RootNamespace>
+    <AssemblyName>BemkoWebServiceDB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'JanexTestVPN|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\JanexTestVPN\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sql z bemko\b2b_adresykontrahentow.sql" />
+    <Content Include="sql z bemko\b2b_CenyKlientow.sql" />
+    <Content Include="sql z bemko\b2b_AdresyKontrahenta.sql" />
+    <Content Include="sql z bemko\b2b_UpdatePassword.sql" />
+    <Content Include="sql z bemko\b2b_twrzamienniki.sql" />
+    <Content Include="sql z bemko\b2b_ceny.sql" />
+    <Content Include="sql z bemko\b2b_tranag.sql" />
+    <Content Include="sql z bemko\b2b_traelem.sql" />
+    <Content Include="sql z bemko\b2b_zamelem.sql" />
+    <Content Include="sql z bemko\b2b_zamnag.sql" />
+    <Content Include="sql z bemko\b2b_stany.sql" />
+    <Content Include="sql z bemko\b2b_cechy.sql" />
+    <Content Include="sql z bemko\b2b_dystrybutorzy.sql" />
+    <Content Include="sql z bemko\b2b_operatorzy.sql" />
+    <Content Include="sql z bemko\b2b_lista_danebinarne.sql" />
+    <Content Include="sql z bemko\b2b_kontrahenci.sql" />
+    <Content Include="sql z bemko\dbo_b2b_CenySpecjalne.sql" />
+    <Content Include="sql z bemko\b2b_grupy.sql" />
+    <Content Include="sql z bemko\b2b_towary.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

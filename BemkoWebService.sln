@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDNOperations", "CDNOperations\CDNOperations.csproj", "{D92B2CC4-E66D-4098-955F-D022D76289B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCDNOperations", "TestCDNOperations\TestCDNOperations.csproj", "{A7A6A651-2EC1-409D-88D9-7D971F44E463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportModule", "ReportModule\ReportModule.csproj", "{C2D891C2-456E-4643-87CA-EC35DF74D90B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{7BCB68C4-18EB-442F-801C-29FF2385B935}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dlls", "dlls", "{621F8187-8B4C-4A72-8BB1-B3B0155742E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSProxy", "WSProxy\WSProxy.csproj", "{C073CF72-2FA6-4EA3-B1D1-E6DF3AF38A70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{DD6DE878-8982-4816-B06F-A6CA3AE46C9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BemkoStanyMagazynoweTest", "BemkoStanyMagazynoweTest\BemkoStanyMagazynoweTest.csproj", "{23CFE7F6-EFB8-4CB0-B4BB-1BB3BEB81DA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BemkoWebServiceDB", "BemkoWebServiceDB\BemkoWebServiceDB.csproj", "{36E8939A-92BF-4195-91E1-78E157C8539E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceTest", "WebServiceTest\WebServiceTest.csproj", "{9E804573-E180-4291-B067-7B2FF4523C19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimaOperations", "OptimaOperations\OptimaOperations.csproj", "{C4C9D648-F92C-41E2-991D-5C2F368CA76C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BmpWebServiceBackend", "BmpWebServiceBackend\BmpWebServiceBackend.csproj", "{695D7BF8-4541-4C06-B2A5-24DFC15E87AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		JanexTestVPN|Any CPU = JanexTestVPN|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D92B2CC4-E66D-4098-955F-D022D76289B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92B2CC4-E66D-4098-955F-D022D76289B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92B2CC4-E66D-4098-955F-D022D76289B6}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{D92B2CC4-E66D-4098-955F-D022D76289B6}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{D92B2CC4-E66D-4098-955F-D022D76289B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92B2CC4-E66D-4098-955F-D022D76289B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A6A651-2EC1-409D-88D9-7D971F44E463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A6A651-2EC1-409D-88D9-7D971F44E463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A6A651-2EC1-409D-88D9-7D971F44E463}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{A7A6A651-2EC1-409D-88D9-7D971F44E463}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{A7A6A651-2EC1-409D-88D9-7D971F44E463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A6A651-2EC1-409D-88D9-7D971F44E463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D891C2-456E-4643-87CA-EC35DF74D90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D891C2-456E-4643-87CA-EC35DF74D90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D891C2-456E-4643-87CA-EC35DF74D90B}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{C2D891C2-456E-4643-87CA-EC35DF74D90B}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{C2D891C2-456E-4643-87CA-EC35DF74D90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D891C2-456E-4643-87CA-EC35DF74D90B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BCB68C4-18EB-442F-801C-29FF2385B935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCB68C4-18EB-442F-801C-29FF2385B935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCB68C4-18EB-442F-801C-29FF2385B935}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{7BCB68C4-18EB-442F-801C-29FF2385B935}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{7BCB68C4-18EB-442F-801C-29FF2385B935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCB68C4-18EB-442F-801C-29FF2385B935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C073CF72-2FA6-4EA3-B1D1-E6DF3AF38A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C073CF72-2FA6-4EA3-B1D1-E6DF3AF38A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C073CF72-2FA6-4EA3-B1D1-E6DF3AF38A70}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{C073CF72-2FA6-4EA3-B1D1-E6DF3AF38A70}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{C073CF72-2FA6-4EA3-B1D1-E6DF3AF38A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C073CF72-2FA6-4EA3-B1D1-E6DF3AF38A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CFE7F6-EFB8-4CB0-B4BB-1BB3BEB81DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CFE7F6-EFB8-4CB0-B4BB-1BB3BEB81DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CFE7F6-EFB8-4CB0-B4BB-1BB3BEB81DA0}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{23CFE7F6-EFB8-4CB0-B4BB-1BB3BEB81DA0}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{23CFE7F6-EFB8-4CB0-B4BB-1BB3BEB81DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CFE7F6-EFB8-4CB0-B4BB-1BB3BEB81DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E8939A-92BF-4195-91E1-78E157C8539E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E8939A-92BF-4195-91E1-78E157C8539E}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{36E8939A-92BF-4195-91E1-78E157C8539E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E8939A-92BF-4195-91E1-78E157C8539E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E804573-E180-4291-B067-7B2FF4523C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E804573-E180-4291-B067-7B2FF4523C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E804573-E180-4291-B067-7B2FF4523C19}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{9E804573-E180-4291-B067-7B2FF4523C19}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{9E804573-E180-4291-B067-7B2FF4523C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E804573-E180-4291-B067-7B2FF4523C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C9D648-F92C-41E2-991D-5C2F368CA76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C9D648-F92C-41E2-991D-5C2F368CA76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C9D648-F92C-41E2-991D-5C2F368CA76C}.JanexTestVPN|Any CPU.ActiveCfg = JanexTestVPN|Any CPU
+		{C4C9D648-F92C-41E2-991D-5C2F368CA76C}.JanexTestVPN|Any CPU.Build.0 = JanexTestVPN|Any CPU
+		{C4C9D648-F92C-41E2-991D-5C2F368CA76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C9D648-F92C-41E2-991D-5C2F368CA76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695D7BF8-4541-4C06-B2A5-24DFC15E87AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695D7BF8-4541-4C06-B2A5-24DFC15E87AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695D7BF8-4541-4C06-B2A5-24DFC15E87AB}.JanexTestVPN|Any CPU.ActiveCfg = Release|Any CPU
+		{695D7BF8-4541-4C06-B2A5-24DFC15E87AB}.JanexTestVPN|Any CPU.Build.0 = Release|Any CPU
+		{695D7BF8-4541-4C06-B2A5-24DFC15E87AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695D7BF8-4541-4C06-B2A5-24DFC15E87AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DAA207A-EF0B-4826-856B-1EF2C54D6594}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

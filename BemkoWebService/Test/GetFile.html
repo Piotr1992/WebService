@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src='jquery-1.10.2.min.js'></script>
+    <script>
+        function GetFile()
+        {
+            $.ajax({
+                type: "POST",
+                url: "FileDownload.ashx",
+                dataType: "json",
+                success: function (data) { }
+            }
+            );
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

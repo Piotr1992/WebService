@@ -1,0 +1,1 @@
+﻿<pytanie><dokument><wersja>1.0.0</wersja><znacznik>2011-03-30T09:26:23+02:00</znacznik></dokument><konto><login>bemko\elmega</login><haslo>elbemko12#$</haslo></konto><towary><towar symbol="D10-J118-300" ilosc="3.00000" /> <towar symbol="SYMBOL_2" ilosc="10.00000" />                               <towar symbol="D15-JDG9-50C" ilosc="15.00000" /></towary></pytanie>

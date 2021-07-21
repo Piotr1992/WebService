@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="b2b_towary">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_towaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_towaryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_grupy">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_grupyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_grupyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_CenySpecjalne">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kntId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_CenySpecjalneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_CenySpecjalneResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_kontrahenci">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_kontrahenciResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_kontrahenciResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_danebinarne">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_danebinarneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_danebinarneResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_operatorzy">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_operatorzyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_operatorzyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_dystrybutorzy">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_dystrybutorzyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_dystrybutorzyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_cenyklientow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kntId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_cenyklientowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_cenyklientowResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_cechy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="twrId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_cechyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_cechyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_stany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_stanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_stanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_zamnag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gidnumer" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_zamnagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_zamnagResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_zamelem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gidnumer" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="kndnumer" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_zamelemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_zamelemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_nowyAdres">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_nowyAdresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_nowyAdresResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_traelem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="trnnumer" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="kndnumer" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_traelemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_traelemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_tranag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gidnumer" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_tranagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_tranagResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_ceny">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_cenyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_cenyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_twrzamienniki">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_twrzamiennikiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_twrzamiennikiResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test">
+        <s:complexType />
+      </s:element>
+      <s:element name="testResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_verifyUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_verifyUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_verifyUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_setNewUserPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_setNewUserPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_setNewUserPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_NumerWeb">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kntid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="numer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_NumerWebResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_NumerWebResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_cdloginlogout">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_cdloginlogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_cdloginlogoutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_nowyDokumentZam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_nowyDokumentZamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_nowyDokumentZamResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_nowyDokumentZamHan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zamXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hanXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pathToSet" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_nowyDokumentZamHanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_nowyDokumentZamHanResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_adresykontrahentow">
+        <s:complexType />
+      </s:element>
+      <s:element name="b2b_adresykontrahentowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_adresykontrahentowResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_AdresyKontrahenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kntnumer" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="b2b_AdresyKontrahentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="b2b_AdresyKontrahentaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="b2b_towarySoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_towary" />
+  </wsdl:message>
+  <wsdl:message name="b2b_towarySoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_towaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_grupySoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_grupy" />
+  </wsdl:message>
+  <wsdl:message name="b2b_grupySoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_grupyResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_CenySpecjalneSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_CenySpecjalne" />
+  </wsdl:message>
+  <wsdl:message name="b2b_CenySpecjalneSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_CenySpecjalneResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_kontrahenciSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_kontrahenci" />
+  </wsdl:message>
+  <wsdl:message name="b2b_kontrahenciSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_kontrahenciResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_danebinarneSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_danebinarne" />
+  </wsdl:message>
+  <wsdl:message name="b2b_danebinarneSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_danebinarneResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_operatorzySoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_operatorzy" />
+  </wsdl:message>
+  <wsdl:message name="b2b_operatorzySoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_operatorzyResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_dystrybutorzySoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_dystrybutorzy" />
+  </wsdl:message>
+  <wsdl:message name="b2b_dystrybutorzySoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_dystrybutorzyResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cenyklientowSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_cenyklientow" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cenyklientowSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_cenyklientowResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cechySoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_cechy" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cechySoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_cechyResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_stanySoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_stany" />
+  </wsdl:message>
+  <wsdl:message name="b2b_stanySoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_stanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_zamnagSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_zamnag" />
+  </wsdl:message>
+  <wsdl:message name="b2b_zamnagSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_zamnagResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_zamelemSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_zamelem" />
+  </wsdl:message>
+  <wsdl:message name="b2b_zamelemSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_zamelemResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_nowyAdresSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_nowyAdres" />
+  </wsdl:message>
+  <wsdl:message name="b2b_nowyAdresSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_nowyAdresResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_traelemSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_traelem" />
+  </wsdl:message>
+  <wsdl:message name="b2b_traelemSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_traelemResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_tranagSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_tranag" />
+  </wsdl:message>
+  <wsdl:message name="b2b_tranagSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_tranagResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cenySoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_ceny" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cenySoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_cenyResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_twrzamiennikiSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_twrzamienniki" />
+  </wsdl:message>
+  <wsdl:message name="b2b_twrzamiennikiSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_twrzamiennikiResponse" />
+  </wsdl:message>
+  <wsdl:message name="testSoapIn">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="testSoapOut">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_verifyUserSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_verifyUser" />
+  </wsdl:message>
+  <wsdl:message name="b2b_verifyUserSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_verifyUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_setNewUserPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_setNewUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="b2b_setNewUserPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_setNewUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_NumerWebSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_NumerWeb" />
+  </wsdl:message>
+  <wsdl:message name="b2b_NumerWebSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_NumerWebResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cdloginlogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_cdloginlogout" />
+  </wsdl:message>
+  <wsdl:message name="b2b_cdloginlogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_cdloginlogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_nowyDokumentZamSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_nowyDokumentZam" />
+  </wsdl:message>
+  <wsdl:message name="b2b_nowyDokumentZamSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_nowyDokumentZamResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_nowyDokumentZamHanSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_nowyDokumentZamHan" />
+  </wsdl:message>
+  <wsdl:message name="b2b_nowyDokumentZamHanSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_nowyDokumentZamHanResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_adresykontrahentowSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_adresykontrahentow" />
+  </wsdl:message>
+  <wsdl:message name="b2b_adresykontrahentowSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_adresykontrahentowResponse" />
+  </wsdl:message>
+  <wsdl:message name="b2b_AdresyKontrahentaSoapIn">
+    <wsdl:part name="parameters" element="tns:b2b_AdresyKontrahenta" />
+  </wsdl:message>
+  <wsdl:message name="b2b_AdresyKontrahentaSoapOut">
+    <wsdl:part name="parameters" element="tns:b2b_AdresyKontrahentaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="b2b_towary">
+      <wsdl:input message="tns:b2b_towarySoapIn" />
+      <wsdl:output message="tns:b2b_towarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_grupy">
+      <wsdl:input message="tns:b2b_grupySoapIn" />
+      <wsdl:output message="tns:b2b_grupySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_CenySpecjalne">
+      <wsdl:input message="tns:b2b_CenySpecjalneSoapIn" />
+      <wsdl:output message="tns:b2b_CenySpecjalneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_kontrahenci">
+      <wsdl:input message="tns:b2b_kontrahenciSoapIn" />
+      <wsdl:output message="tns:b2b_kontrahenciSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_danebinarne">
+      <wsdl:input message="tns:b2b_danebinarneSoapIn" />
+      <wsdl:output message="tns:b2b_danebinarneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_operatorzy">
+      <wsdl:input message="tns:b2b_operatorzySoapIn" />
+      <wsdl:output message="tns:b2b_operatorzySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_dystrybutorzy">
+      <wsdl:input message="tns:b2b_dystrybutorzySoapIn" />
+      <wsdl:output message="tns:b2b_dystrybutorzySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cenyklientow">
+      <wsdl:input message="tns:b2b_cenyklientowSoapIn" />
+      <wsdl:output message="tns:b2b_cenyklientowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cechy">
+      <wsdl:input message="tns:b2b_cechySoapIn" />
+      <wsdl:output message="tns:b2b_cechySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_stany">
+      <wsdl:input message="tns:b2b_stanySoapIn" />
+      <wsdl:output message="tns:b2b_stanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_zamnag">
+      <wsdl:input message="tns:b2b_zamnagSoapIn" />
+      <wsdl:output message="tns:b2b_zamnagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_zamelem">
+      <wsdl:input message="tns:b2b_zamelemSoapIn" />
+      <wsdl:output message="tns:b2b_zamelemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyAdres">
+      <wsdl:input message="tns:b2b_nowyAdresSoapIn" />
+      <wsdl:output message="tns:b2b_nowyAdresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_traelem">
+      <wsdl:input message="tns:b2b_traelemSoapIn" />
+      <wsdl:output message="tns:b2b_traelemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_tranag">
+      <wsdl:input message="tns:b2b_tranagSoapIn" />
+      <wsdl:output message="tns:b2b_tranagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_ceny">
+      <wsdl:input message="tns:b2b_cenySoapIn" />
+      <wsdl:output message="tns:b2b_cenySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_twrzamienniki">
+      <wsdl:input message="tns:b2b_twrzamiennikiSoapIn" />
+      <wsdl:output message="tns:b2b_twrzamiennikiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testSoapIn" />
+      <wsdl:output message="tns:testSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_verifyUser">
+      <wsdl:input message="tns:b2b_verifyUserSoapIn" />
+      <wsdl:output message="tns:b2b_verifyUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_setNewUserPassword">
+      <wsdl:input message="tns:b2b_setNewUserPasswordSoapIn" />
+      <wsdl:output message="tns:b2b_setNewUserPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_NumerWeb">
+      <wsdl:input message="tns:b2b_NumerWebSoapIn" />
+      <wsdl:output message="tns:b2b_NumerWebSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cdloginlogout">
+      <wsdl:input message="tns:b2b_cdloginlogoutSoapIn" />
+      <wsdl:output message="tns:b2b_cdloginlogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyDokumentZam">
+      <wsdl:input message="tns:b2b_nowyDokumentZamSoapIn" />
+      <wsdl:output message="tns:b2b_nowyDokumentZamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyDokumentZamHan">
+      <wsdl:input message="tns:b2b_nowyDokumentZamHanSoapIn" />
+      <wsdl:output message="tns:b2b_nowyDokumentZamHanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_adresykontrahentow">
+      <wsdl:input message="tns:b2b_adresykontrahentowSoapIn" />
+      <wsdl:output message="tns:b2b_adresykontrahentowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="b2b_AdresyKontrahenta">
+      <wsdl:input message="tns:b2b_AdresyKontrahentaSoapIn" />
+      <wsdl:output message="tns:b2b_AdresyKontrahentaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="b2b_towary">
+      <soap:operation soapAction="http://tempuri.org/b2b_towary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_grupy">
+      <soap:operation soapAction="http://tempuri.org/b2b_grupy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_CenySpecjalne">
+      <soap:operation soapAction="http://tempuri.org/b2b_CenySpecjalne" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_kontrahenci">
+      <soap:operation soapAction="http://tempuri.org/b2b_kontrahenci" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_danebinarne">
+      <soap:operation soapAction="http://tempuri.org/b2b_danebinarne" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_operatorzy">
+      <soap:operation soapAction="http://tempuri.org/b2b_operatorzy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_dystrybutorzy">
+      <soap:operation soapAction="http://tempuri.org/b2b_dystrybutorzy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cenyklientow">
+      <soap:operation soapAction="http://tempuri.org/b2b_cenyklientow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cechy">
+      <soap:operation soapAction="http://tempuri.org/b2b_cechy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_stany">
+      <soap:operation soapAction="http://tempuri.org/b2b_stany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_zamnag">
+      <soap:operation soapAction="http://tempuri.org/b2b_zamnag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_zamelem">
+      <soap:operation soapAction="http://tempuri.org/b2b_zamelem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyAdres">
+      <soap:operation soapAction="http://tempuri.org/b2b_nowyAdres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_traelem">
+      <soap:operation soapAction="http://tempuri.org/b2b_traelem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_tranag">
+      <soap:operation soapAction="http://tempuri.org/b2b_tranag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_ceny">
+      <soap:operation soapAction="http://tempuri.org/b2b_ceny" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_twrzamienniki">
+      <soap:operation soapAction="http://tempuri.org/b2b_twrzamienniki" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap:operation soapAction="http://tempuri.org/test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_verifyUser">
+      <soap:operation soapAction="http://tempuri.org/b2b_verifyUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_setNewUserPassword">
+      <soap:operation soapAction="http://tempuri.org/b2b_setNewUserPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_NumerWeb">
+      <soap:operation soapAction="http://tempuri.org/b2b_NumerWeb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cdloginlogout">
+      <soap:operation soapAction="http://tempuri.org/b2b_cdloginlogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyDokumentZam">
+      <soap:operation soapAction="http://tempuri.org/b2b_nowyDokumentZam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyDokumentZamHan">
+      <soap:operation soapAction="http://tempuri.org/b2b_nowyDokumentZamHan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_adresykontrahentow">
+      <soap:operation soapAction="http://tempuri.org/b2b_adresykontrahentow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_AdresyKontrahenta">
+      <soap:operation soapAction="http://tempuri.org/b2b_AdresyKontrahenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="b2b_towary">
+      <soap12:operation soapAction="http://tempuri.org/b2b_towary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_grupy">
+      <soap12:operation soapAction="http://tempuri.org/b2b_grupy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_CenySpecjalne">
+      <soap12:operation soapAction="http://tempuri.org/b2b_CenySpecjalne" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_kontrahenci">
+      <soap12:operation soapAction="http://tempuri.org/b2b_kontrahenci" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_danebinarne">
+      <soap12:operation soapAction="http://tempuri.org/b2b_danebinarne" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_operatorzy">
+      <soap12:operation soapAction="http://tempuri.org/b2b_operatorzy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_dystrybutorzy">
+      <soap12:operation soapAction="http://tempuri.org/b2b_dystrybutorzy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cenyklientow">
+      <soap12:operation soapAction="http://tempuri.org/b2b_cenyklientow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cechy">
+      <soap12:operation soapAction="http://tempuri.org/b2b_cechy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_stany">
+      <soap12:operation soapAction="http://tempuri.org/b2b_stany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_zamnag">
+      <soap12:operation soapAction="http://tempuri.org/b2b_zamnag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_zamelem">
+      <soap12:operation soapAction="http://tempuri.org/b2b_zamelem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyAdres">
+      <soap12:operation soapAction="http://tempuri.org/b2b_nowyAdres" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_traelem">
+      <soap12:operation soapAction="http://tempuri.org/b2b_traelem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_tranag">
+      <soap12:operation soapAction="http://tempuri.org/b2b_tranag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_ceny">
+      <soap12:operation soapAction="http://tempuri.org/b2b_ceny" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_twrzamienniki">
+      <soap12:operation soapAction="http://tempuri.org/b2b_twrzamienniki" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap12:operation soapAction="http://tempuri.org/test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_verifyUser">
+      <soap12:operation soapAction="http://tempuri.org/b2b_verifyUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_setNewUserPassword">
+      <soap12:operation soapAction="http://tempuri.org/b2b_setNewUserPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_NumerWeb">
+      <soap12:operation soapAction="http://tempuri.org/b2b_NumerWeb" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_cdloginlogout">
+      <soap12:operation soapAction="http://tempuri.org/b2b_cdloginlogout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyDokumentZam">
+      <soap12:operation soapAction="http://tempuri.org/b2b_nowyDokumentZam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_nowyDokumentZamHan">
+      <soap12:operation soapAction="http://tempuri.org/b2b_nowyDokumentZamHan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_adresykontrahentow">
+      <soap12:operation soapAction="http://tempuri.org/b2b_adresykontrahentow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="b2b_AdresyKontrahenta">
+      <soap12:operation soapAction="http://tempuri.org/b2b_AdresyKontrahenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="https://212.180.168.4:9433/b2b/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="https://212.180.168.4:9433/b2b/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
